@@ -7,7 +7,13 @@ BOARD_SEPOLICY_DIRS += \
     vendor/lpop/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-service_contexts \
-system.te
-  
-
+    app.te \
+    bootanim.te \
+    file.te \
+    file_contexts \
+    mediaserver.te \
+    service_contexts \
+    system.te \
+    ueventd.te \
+    vold.te \
+    zygote.te
