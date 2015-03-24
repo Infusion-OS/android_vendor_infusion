@@ -129,3 +129,12 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/media/audio/ui/VideoStop.ogg:system/media/audio/ui/VideoStop.ogg \
         $(LOCAL_PATH)/media/audio/ui/WirelessChargingStarted.ogg:system/media/audio/ui/WirelessChargingStarted.ogg
         
+# DRM
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/vendor/lib/libwvdrm_L1.so:/system/vendor/lib/libwvdrm_L1.so \
+        $(LOCAL_PATH)/vendor/lib/libwvm.so:/system/vendor/lib/libwvm.so \
+        $(LOCAL_PATH)/lib/drm/libfwdlockengine.so:/system/lib/drm/libfwdlockengine.so \
+        $(LOCAL_PATH)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:/system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+        $(LOCAL_PATH)/vendor/lib/libWVStreamControlAPI_L1.so:/system/vendor/lib/libWVStreamControlAPI_L1.so \
+        $(LOCAL_PATH)/vendor/lib/drm/libdrmwvmplugin.so:/system/vendor/lib/drm/libdrmwvmplugin.so \
+        $(LOCAL_PATH)/vendor/lib/mediadrm/libwvdrmengine.so:/system/vendor/lib/mediadrm/libwvdrmengine.so \
