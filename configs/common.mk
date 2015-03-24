@@ -64,7 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
+    $(LOCAL_PATH)/bin/otasigcheck.sh:install/bin/otasigcheck.sh
 
 # Bootanimation support
 PRODUCT_COPY_FILES += \
@@ -72,10 +72,14 @@ PRODUCT_COPY_FILES += \
 
 # mounts
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/bin/sysrw:system/bin/sysrw \
-    vendor/eos/prebuilt/common/bin/sysro:system/bin/sysro \
-    vendor/eos/prebuilt/common/bin/rootrw:system/bin/rootrw \
-    vendor/eos/prebuilt/common/bin/rootro:system/bin/rootro    
+    $(LOCAL_PATH)/bin/sysrw:system/bin/sysrw \
+    $(LOCAL_PATH)/bin/sysro:system/bin/sysro \
+    $(LOCAL_PATH)/bin/rootrw:system/bin/rootrw \
+    $(LOCAL_PATH)/bin/rootro:system/bin/rootro
+
+ # Don't export PS1 in /system/etc/mkshrc.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/mkshrc:system/etc/mkshrc
     
 #Add shamu audio files
 # Alarms
