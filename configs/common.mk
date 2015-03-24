@@ -65,6 +65,13 @@ PRODUCT_COPY_FILES += \
 # Bootanimation support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
+
+# mounts
+PRODUCT_COPY_FILES += \
+    vendor/eos/prebuilt/common/bin/sysrw:system/bin/sysrw \
+    vendor/eos/prebuilt/common/bin/sysro:system/bin/sysro \
+    vendor/eos/prebuilt/common/bin/rootrw:system/bin/rootrw \
+    vendor/eos/prebuilt/common/bin/rootro:system/bin/rootro    
     
 #Add shamu audio files
 # Alarms
