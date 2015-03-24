@@ -28,6 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0 \
     keyguard.no_require_sim=true \
     drm.service.enabled=true
+
+# Disable ADB authentication
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/lpop/overlays/common
 
