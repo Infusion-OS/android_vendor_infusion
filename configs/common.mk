@@ -55,7 +55,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addon.d/50-lpop.sh:system/addon.d/50-lpop.sh \
     $(LOCAL_PATH)/bin/backuptool.functions:system/bin/backuptool.functions \
-    $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh
+    $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh \
+    $(LOCAL_PATH)/bin/blacklist:system/addon.d/blacklist
 
 # Bootanimation support
 PRODUCT_COPY_FILES += \
