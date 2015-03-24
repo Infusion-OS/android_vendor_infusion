@@ -62,6 +62,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh \
     $(LOCAL_PATH)/bin/blacklist:system/addon.d/blacklist
 
+# Signature compatibility validation
+PRODUCT_COPY_FILES += \
+    vendor/eos/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
+
 # Bootanimation support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
