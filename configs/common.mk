@@ -27,7 +27,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
     keyguard.no_require_sim=true \
-    drm.service.enabled=true
+    drm.service.enabled=true \
+    dalvik.vm.image-dex2oat-filter=everything \
+    dalvik.vm.dex2oat-filter=everything
 
 # Disable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
