@@ -67,6 +67,15 @@ PRODUCT_COPY_FILES += \
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bin/otasigcheck.sh:install/bin/otasigcheck.sh
+   
+# init.d support
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/init.d/00banner:system/etc/init.d/00banner \
+    $(LOCAL_PATH)/bin/sysinit:system/bin/sysinit
+
+# userinit support
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Bootanimation support
 PRODUCT_COPY_FILES += \
