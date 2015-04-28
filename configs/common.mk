@@ -39,6 +39,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/lpop/overlays/common
 
 # Needed Packages
 PRODUCT_PACKAGES += \
+AudioFX \
 LockClock \
 Launcher3 \
 ScreenRecorder \
