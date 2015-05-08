@@ -170,3 +170,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vendor/lib/libWVStreamControlAPI_L1.so:/system/vendor/lib/libWVStreamControlAPI_L1.so \
     $(LOCAL_PATH)/vendor/lib/drm/libdrmwvmplugin.so:/system/vendor/lib/drm/libdrmwvmplugin.so \
     $(LOCAL_PATH)/vendor/lib/mediadrm/libwvdrmengine.so:/system/vendor/lib/mediadrm/libwvdrmengine.so \
+
+include vendor/lpop/configs/themes_common.mk
