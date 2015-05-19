@@ -14,6 +14,4 @@ BOARD_SEPOLICY_UNION += \
     mediaserver.te \
     service_contexts \
     system.te \
-    ueventd.te \
-    vold.te \
     zygote.te
