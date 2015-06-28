@@ -45,6 +45,13 @@ Launcher3 \
 ScreenRecorder \
 libscreenrecorder
 
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+libstagefright_soft_ffmpegadec \
+libstagefright_soft_ffmpegvdec \
+libFFmpegExtractor \
+media_codecs_ffmpeg.xml
+
 # Proprietary latinime lib needed for swyping
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lib/libjni_latinime.so:system/lib/libjni_latinime.so
@@ -92,7 +99,7 @@ PRODUCT_COPY_FILES += \
  # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/mkshrc:system/etc/mkshrc
-    
+
 #Add shamu audio files
 # Alarms
 PRODUCT_COPY_FILES += \
