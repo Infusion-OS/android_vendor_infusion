@@ -26,6 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # inherit from the Lpop vendor, if present
 $(call inherit-product-if-exists, vendor/lpop/configs/common_full_phone.mk)
 
+PRODUCT_PACKAGES += Trebuchet
+
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
 vendor/lpop/prebuilts/common/system/media/bootanimation.zip:system/media/bootanimation.zip
