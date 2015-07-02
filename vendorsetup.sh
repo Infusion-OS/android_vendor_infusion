@@ -1,2 +1,2 @@
-add_lunch_combo lpop_shamu-user
-add_lunch_combo lpop_m8-user
+add_lunch_combo lpop_shamu-userdebug
+add_lunch_combo lpop_m8-userdebug
