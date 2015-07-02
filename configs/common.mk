@@ -68,9 +68,9 @@ PRODUCT_COPY_FILES += \
 
 # Backuptool support
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/addon.d/50-lpop.sh:system/addon.d/50-lpop.sh \
-    $(LOCAL_PATH)/bin/backuptool.functions:system/bin/backuptool.functions \
-    $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh \
+    $(LOCAL_PATH/addon.d/50-backuptool.sh:system/addon.d/50-backuptool.sh \
+    $(LOCAL_PATH/bin/backuptool.functions:install/bin/backuptool.functions \
+    $(LOCAL_PATH/bin/backuptool.sh:install/bin/backuptool.sh \
     $(LOCAL_PATH)/bin/blacklist:system/addon.d/blacklist
 
 # Signature compatibility validation
