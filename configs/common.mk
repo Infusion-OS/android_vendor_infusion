@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
 AudioFX \
 Eleven \
 LockClock \
-Launcher3 \
+Trebuchet \
 ScreenRecorder \
 libscreenrecorder
 
