@@ -1,10 +1,10 @@
 #
 # This policy configuration will be used by all products that
-# inherit from Lpop
+# inherit from Infusion
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/lpop/sepolicy
+    vendor/infusion/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     app.te \

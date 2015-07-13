@@ -1,7 +1,7 @@
-# Inherit common lpop config
-$(call inherit-product, vendor/lpop/configs/common.mk)
+# Inherit common Infusion config
+$(call inherit-product, vendor/infusion/configs/common.mk)
 
-# Optional lpop packages
+# Optional Infusion packages
 PRODUCT_PACKAGES += \
     HoloSpiralWallpaper \
     MagicSmokeWallpapers \
@@ -11,4 +11,3 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     VisualizationWallpapers \
     PhaseBeam
-

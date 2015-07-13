@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lpop_m8.mk \
-    $(LOCAL_DIR)/lpop_shamu.mk
+    $(LOCAL_DIR)/infusion_m8.mk \
+    $(LOCAL_DIR)/infusion_shamu.mk

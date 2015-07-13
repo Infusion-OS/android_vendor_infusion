@@ -17,8 +17,8 @@
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
-# inherit from the Lpop vendor, if present
-$(call inherit-product-if-exists, vendor/lpop/configs/common_full_phone.mk)
+# inherit from the Infusion vendor, if present
+$(call inherit-product-if-exists, vendor/infusion/configs/common_full_phone.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -30,7 +30,7 @@ $(call inherit-product, device/htc/m8/device.mk)
 # Inherit m8-specific vendor tree
 $(call inherit-product-if-exists, vendor/htc/m8/m8-vendor.mk)
 
-PRODUCT_NAME := lpop_m8
+PRODUCT_NAME := infusion_m8
 PRODUCT_DEVICE := m8
 PRODUCT_BRAND := htc
 PRODUCT_MODEL := One M8

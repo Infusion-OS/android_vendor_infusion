@@ -2,6 +2,6 @@
 #
 # Print startup info
 #
-L="log -p i -t lpop"
+L="log -p i -t infusion”
 
-$L "Welcome to L-Pop";
+$L "Welcome to Infusion-Rom”;

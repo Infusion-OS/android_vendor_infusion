@@ -23,19 +23,19 @@
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# inherit from the Lpop vendor, if present
-$(call inherit-product-if-exists, vendor/lpop/configs/common_full_phone.mk)
+# inherit from the Infusion vendor, if present
+$(call inherit-product-if-exists, vendor/infusion/configs/common_full_phone.mk)
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
-vendor/lpop/prebuilts/common/system/media/bootanimation.zip:system/media/bootanimation.zip
+vendor/infusion/prebuilts/common/system/media/bootanimation.zip:system/media/bootanimation.zip
 
 $(call inherit-product, device/moto/shamu/device.mk)
 $(call inherit-product-if-exists, vendor/motorola/shamu/device-vendor.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=shamu BUILD_FINGERPRINT=google/shamu/shamu:5.1/LMY47D/1743759:user/release-keys PRIVATE_BUILD_DESC="shamu-user 5.1 LMY47D 1743759 release-keys"
 
-PRODUCT_NAME := lpop_shamu
+PRODUCT_NAME := infusion_shamu
 PRODUCT_DEVICE := shamu
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6

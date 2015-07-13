@@ -1,8 +1,8 @@
 # Brand
-PRODUCT_BRAND ?= lpop
+PRODUCT_BRAND ?= infusion
 
 # Local path for prebuilts
-LOCAL_PATH:= vendor/lpop/prebuilts/common/system
+LOCAL_PATH:= vendor/infusion/prebuilts/common/system
 
 # Common build prop overrides 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -35,7 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Common overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/lpop/overlays/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/infusion/overlays/common
 
 # Needed Packages
 PRODUCT_PACKAGES += \
@@ -179,4 +179,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vendor/lib/drm/libdrmwvmplugin.so:/system/vendor/lib/drm/libdrmwvmplugin.so \
     $(LOCAL_PATH)/vendor/lib/mediadrm/libwvdrmengine.so:/system/vendor/lib/mediadrm/libwvdrmengine.so \
 
-include vendor/lpop/configs/themes_common.mk
+include vendor/infusion/configs/themes_common.mk

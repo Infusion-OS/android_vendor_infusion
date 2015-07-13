@@ -4,4 +4,4 @@ PRODUCT_PACKAGES += \
    ThemesProvider
 
 PRODUCT_COPY_FILES += \
-   vendor/lpop/configs/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml
+   vendor/infusion/configs/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml
