@@ -20,6 +20,9 @@
 # inherit from the Infusion vendor, if present
 $(call inherit-product-if-exists, vendor/infusion/configs/common_full_phone.mk)
 
+# Get the long list of APNs
+PRODUCT_COPY_FILES := vendor/infusion/prebuilts/apnx/apns-conf.xml:system/etc/apns-conf.xml
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
